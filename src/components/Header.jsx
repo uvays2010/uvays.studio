@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next'
 export default function Header({ theme, setTheme }) {
   const { t, i18n } = useTranslation(); 
   const [open, setOpen] = useState(false)
-  const links = [['/', t('home')], ['/projects', t('projects')], ['/technologies', t('technologies')], ['/about', t('about')], ['/contact', t('contact')]]
+  const links = [['/', t('home')], ['/projects', t('projects')], ['/about', t('about')], ['/contact', t('contact')]]
 
   return (
     <motion.header className="header" initial={{ y: -24, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: .65, ease: [.22, 1, .36, 1] }}>

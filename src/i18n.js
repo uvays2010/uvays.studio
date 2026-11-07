@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next'
 
 const resources = {
   uz: { translation: {
-    home:'Bosh sahifa', projects:'Loyihalar', technologies:'Texnologiyalar', about:'Men haqimda', contact:'Aloqa',
+    home:'Bosh sahifa', projects:'Saytlarim', technologies:'Texnologiyalar', about:'Men haqimda', contact:'Aloqa',
     eyebrow:'MUSTAQIL DASTURCHI · DIGITAL CREATOR', hero1:'G‘oyalarni', hero2:'raqamli tajribaga', hero3:'aylantiraman.', heroDesc:'Men zamonaviy web-platformalar, foydali mahsulotlar va kuchli raqamli tajribalar yarataman.',
     explore:'Loyihalarni ko‘rish', contactMe:'Bog‘lanish', selected:'Tanlangan ishlar', selectedDesc:'G‘oyadan tayyor mahsulotgacha — eng so‘nggi ishlarim.',
     allProjects:'Barcha loyihalar', projectsTitle:'Loyihalar', projectsDesc:'Yaratilgan mahsulotlar, tajribalar va raqamli yechimlar.', search:'Loyiha qidirish...', all:'Barchasi', newest:'Eng yangi', oldest:'Avvalgilari', featured:'Tanlangan',
