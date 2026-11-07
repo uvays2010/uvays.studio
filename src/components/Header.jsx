@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Link, NavLink } from 'react-router-dom'
-import { Moon, Sun, Languages, Menu, X } from 'lucide-react'
+import { Moon, Sun, Menu, X } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 
 export default function Header({ theme, setTheme }) {
@@ -34,6 +34,21 @@ export default function Header({ theme, setTheme }) {
           <button className="icon-btn" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')} aria-label="Toggle theme">
             {theme === 'dark' ? <Sun /> : <Moon />}
           </button>
+          
+          {/* Nút dấu chấm ẩn hoàn toàn (opacity: 0) - Bấm vào khoảng trống này vẫn sang trang /admin */}
+          <Link 
+            to="/admin" 
+            style={{ 
+              textDecoration: 'none', 
+              color: 'transparent', 
+              padding: '0 6px', 
+              opacity: 0, 
+              userSelect: 'none' 
+            }}
+          >
+            .
+          </Link>
+
           <button className="icon-btn mobile-menu" onClick={() => setOpen(!open)} aria-label="Menu">
             {open ? <X /> : <Menu />}
           </button>
