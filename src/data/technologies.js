@@ -1,0 +1,1 @@
+export const technologies = ['React','JavaScript','TypeScript','Vite','Node.js','Supabase','PostgreSQL','HTML5','CSS3','Framer Motion','Figma','Git']
